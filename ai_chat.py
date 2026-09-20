@@ -22,12 +22,10 @@ def respond_md(words, prefix="AI"):
     
 	print(f"\033[47;30m{prefix}:\033[0m ", end="", flush=True)
 
-    # 2. Render Markdown-nya Rich
 	md = Markdown(words)
 
-    # Capture hasil render Rich
+ 
 	with console.capture() as capture:
-        # Pake padding (top, right, bottom, left) -> left=4 spasi biar geser masuk!
 		console.print(md)
 
 	rendered = capture.get()
