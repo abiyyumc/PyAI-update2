@@ -1,6 +1,6 @@
 {"version": [1, 0, 1],
-"files":(
+"files":[
   "ai_chat.py",
   "setting_page.py",
-  "update_checker.py")
+  "update_checker.py"]
 }
